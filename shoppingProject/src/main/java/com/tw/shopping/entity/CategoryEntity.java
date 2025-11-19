@@ -26,5 +26,4 @@ public class CategoryEntity {
 	@Column(name = "parentid")
 	private String parentId;
 	
-	@@
 }
