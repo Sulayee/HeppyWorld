@@ -9,23 +9,14 @@ import jakarta.persistence.Table;
 import lombok.Data;
 
 @Entity
-@Table(name = "category")
+@Table(name = "product")
 @Data
-public class CategoryEntity {
+public class ProductEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "categoryid")
-	private Integer categoryId;
+	@Column(name = "productid")
+	private Integer productId;
 	
-	@Column(name = "cname")
-	private String cname;
-	
-	@Column(name = "code")
-	private String code;
-	
-	@Column(name = "parentid")
-	private String parentId;
-	
-//	-------------------------
-	
+	@Column(name = "pname")
+	private String pname;
 }
